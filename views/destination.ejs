@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> 
+    Travel blog 
+  </title>
+
+  <link rel = "stylesheet" href = "style.css"/>
+  <meta name = "viewpoint" content = "width = device-width">
+  <script type = "text/javascript" src = "script.js"> </script>
+</head>
+
+<body>
+  <div id = "maincontainer">
+    <%- include("../views/header") %>
+    <%- include("../views/navbar") %>
+    <%- include("../views/navleft") %>
+
+    <div id = "continut">
+      <h1> Travel guides </h1>
+      
+      <p> Our travel guides aim to give you the best and most up to date information on the major travel destinations around the world.</p>
+      <p> Here you will find budget tips, money-saving advice, recommendations on places to stay, things to see and do, and where to eat. It doesn’t matter what type of vacation you are going on – cruise, backpacking trip, island getaway, two-week holiday, round-the-world-trip, or a family vacation. </p>
+      <p> These destination guides will give you all the information you need for your trip so you can travel better, longer, and cheaper. I know how bad it is to get outdated information in print guidebooks. I’ve been the victim of it too many times. I update this section twice a year to keep the content fresh!</p>
+      <p> <strong> Select a country on the map below </strong> </p>
+
+      <img src="images/worldMap.png" alt = "World Map" class = "harta" usemap = "#worldMap">
+
+      <map name = "worldMap">
+        <area shape = "poly" coords = "383,163,389,156,405,179" href = "/italy" alt = "Italy">
+        <area shape = "poly" coords = "347,166,369,168,365,185,351,182" href = "/spain" alt = "Spain">
+        <area shape = "poly" coords = "659,145,668,136,657,132" href = "/japan" alt = "Japan">
+        <area shape = "poly" coords = "609,372,625,335,666,312,706,356,680,396,647,367" href = "/australia" alt = "Australia">
+        <area shape = "poly" coords = "107,77,125,37,264,21,244,64,258,133,203,150,118,126" href="/canada" alt = "Canada">
+      </map> 
+    </div>
+  </div>
+  <%- include("../views/footer") %>
+</body>
+</html>

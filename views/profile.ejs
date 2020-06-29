@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog  </title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+        <script type = "text/javascript" src = "script.js"> </script>
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+    
+            <div id = "continut">
+                <h1> Profile Page </h1>
+                <% if(locals.user){ %>
+                    <div class="info_login">
+                        <p> <b>Username</b>: <%= user.username %></p>
+                        <p> <b>Nume:</b> <%= user.fname %> </p>
+                        <p> <b>Prenume: </b> <%= user.lname %></p>
+                        <p> <b>Varsta: </b> <%= user.age %></p>
+                    </div>
+                    <div id = "logoutResponse">
+                        <button id = "logOutUser" onclick="userLogOut()"> Log-out</button>
+                    </div>  
+                <% } else{ %>
+                    <h3 style="text-align: center;"> Nu este niciun utilizator logat!</h3>
+                <% } %>
+            </div>
+
+            <%- include("../views/footer") %>
+        </div>
+    </body>
+</html>

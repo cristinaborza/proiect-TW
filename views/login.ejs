@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel Blog  </title>
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+        <script type = "text/javascript" src = "script.js"> </script>
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+
+            <div id = "continut">
+                <h1> User log-in </h1>
+                <% if(locals.user){ %>
+                    <h3 style="text-align: center;"> Exista deja un user logat! </h3>
+                <% } else{ %>
+                    <form id = "login" method="post">
+                        <label>
+                            Username: <input type="text" name="username" >
+                        </label>
+                        <label>
+                            Password: <input type="password" name="parola" >
+                        </label>
+                        <input id = "submit" type="submit" value="Submit">
+                    </form>
+                <% } %>
+            </div>
+
+            <%- include("../views/footer") %>
+        </div>
+    </body>
+</html>

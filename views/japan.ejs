@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog  </title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+
+            <div id = "continut">
+                <h1> Japan travel guide </h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/japan1.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="images/japan2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/japan3.jpg" style="width:100%">
+                    </div>
+                
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+
+                <p> Japan is one of the most amazing, beautiful, and friendly countries in the world. From bustling Tokyo and zen-like Kyoto all the way to laid-back Okinawa and wintery Hokkaido, Japan is a high-tech world mixed with the politeness and respect of their past. </p>
+                <p> Japan has mouth-watering food, majestic temples and shrines, zen gardens, lush national parks, and a rich historic culture. It’s a wonderful place and, while it may be an expensive country to visit, there are plenty of ways to make this country an affordable place to visit. </p>
+                <p> I was actually shocked how easy it was to travel Japan on a budget! </p>
+                <p> Backpacking or traveling Japan isn’t as expensive or difficult as you think. It’s one of those great myths of travel that Japan has to be expensive or hard to get around. </p>
+                <p> That’s not true. </p>
+                <p> And everyone here is super friendly and helpful. Everyone here is just so excited to have guests and are lovely, lovely people! </p>
+
+                <div class = "flex-container">
+                    <article class = "main">
+                        <h2> Things to See and Do in Japan </h2>
+                        <ul>
+                            <li> <strong> Visit the Tsukiji fish market </strong> - Tokyo’s fish market. This market starts bright and early at 4am and you can see the frenzied buying and selling of the world’s largest tuna market. Eat just-caught sushi for breakfast and marvel at the frenzied atmosphere. There’s nothing like it in the world, so this a must-see while you’re visiting Japan! As of 2018, the inner fish market moved to Toyosu and is now known as the Toyosu Fish Market, however, the outer market (where you can find food and shops) is still in place</li>
+                            <li> <strong> Spend a day in the Gion District </strong> - Otherwise known as the Geisha District, you can spend the day here for as much, or as little, as you’d like to spend. The area is filled with fascinating architecture and if you’re lucky you may be able to spot a geisha (a traditional professional entertainer). It’s also a good area for window shopping. </li>
+                            <li> <strong> Visit the Heian Shrine </strong> - The Heian Shrine is a popular tourist attraction so get there early if at all possible. The garden is filled with beautiful cherry blossom trees, known as sakura, and a beautiful place for some pictures. The shrine is free but the garden nearby costs 600 JPY (5 USD) to enter. To see the trees in blossom, make sure you’re there mid-April. </li>
+                            <li> <strong> Relax in Ueno Park </strong> - Ueno Park is a great place to spend the day and for free. Take your camera as it’s a perfect spot to record the many cherry blossom trees, and take a lunch too to save some extra money. </li>
+                            <li> <strong> Stop by the Imperial Palace </strong> - Visit the Imperial Palace which is home to the Emperor of Japan and a perfect opportunity to learn about some of Japan’s history and culture. Though you can’t go inside, the surrounding grounds and park are beautiful and you can see the changing of the guard. </li>
+                        </ul>
+                    </article>
+                    <article class = "main">
+                        <h2> Japan Travel Costs </h2>
+                        <ul>
+                            <li> <strong> Accommodation </strong> - Most hostels will charge between 2,500-4,000 JPY (20-35 USD) per night for a dorm room. Capsule hotels cost between 3,000-5,500 JPY (25-50 USD) for a tiny little room (that’s really a pod). If you’re looking for privacy, expect to pay around 8,500 JPY (75 USD) for a double room at a budget hotel. The price of accommodation in the big cities is significantly higher than if you were to travel off the beaten path (Okinawa, for example, is half the price of Tokyo). </li>
+                            <li> <strong> Food </strong> - There are many cheap places to eat out in Japan from the ramen noodle shops to miso and soba noodles. These food options range from 250-1,250 JPY (2-11 USD). Buying groceries will cost you 3,700-5,000 JPY (35-45 USD) per week. Most restaurant meals cost around 2,000 JPY (20 USD). Mid-range restaurants can cost around 4,350 JPY (40 USD). Sushi trains cost between 125-620 JPY (1-6 USD) per piece. Fast food is around 800 JPY (7 USD). </li>
+                            <li> <strong> Activities </strong> - Most temples and museums are free to enter, although some popular attractions cost around 1,250 JPY (10 USD). The temples in Kyoto can cost up to 620 JPY (5 USD). Many of the city’s parks are free, so take advantage when you can and spend the day there. You can buy city or temple passes that are valid for one day. </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <%- include("../views/footer") %>
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>

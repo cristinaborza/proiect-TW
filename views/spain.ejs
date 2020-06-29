@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog </title>
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+            <div id = "continut">
+                <h1> Spain travel guide </h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/spain1.jpg" style="width:100%">
+                    </div> 
+                    <div class="mySlides fade">
+                        <img src="images/spain2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/spain3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>    
+                </div>
+
+                <p> The land of the siesta, daily life in Spain moves slowly and runs late. </p>
+                <p> Everyone here is just enjoying life. </p>
+                <p> Which is why traveling and backpacking Spain is so much fun. </p>
+                <p> Spain is a beautiful, interesting, and dynamic country with a lot of regional uniqueness and variety. Madrid and Barcelona are hip and energetic cities, Granada has a Moorish touch, Basque Country up north contrast itself to Southern living. </p>
+                <p> The Spaniards love visitors, hosting strangers, drinking good wine, laughing at a good meal, and enjoying life. People aren’t in a rush here. </p>
+
+                <div class = "flex-container">
+                    <article class = "main">
+                        <h2> Things to See and Do in Spain </h2>
+                        <ul>
+                            <li> <strong> Join the Running of the Bulls </strong> - Held in July in Pamplona, the Running of the Bulls attracts both the brave and the stupid. While I’d never do the actual running, the multi-day celebration is still a good place to go drink sangria, eat good food, wear a red scarf, and celebrate the way only Spain can. </li>
+                            <li> <strong> Lounge on the Costa Del Sol </strong> - Come hang out on the beach and enjoy the laid-back life for which Spain is famous. The sun coast in southern Spain is famous for its beautiful beaches, great nightlife (and tons of tourists). Malaga is one of the biggest places on the coast but I think there are better places further down.</li>
+                            <li> <strong> Go to Valencia </strong> - Valencia is a pretty amazing town. Initially, I wasn’t attracted to Valencia for any reason in particular — I came for the tomato fight in the nearby town of Bunol, which attracts thousands of people each August, most of whom use Valencia as their home base. However, Valencia grew on me. It has great seafood, paella, history, and a good soccer team. I would go back in a second. It’s a wonderful city! </li>
+                            <li> <strong> Walk The Camino </strong> - El Camino de Santiago, or The Way of Saint James, is a popular pilgrimage route stretching from the border of France all the way to Santiago de Compostela in North-Western Spain. Stretching 800km, this month-long walk takes a lot of dedication. Nevertheless, it’s a great way to see the country and some of the less-visited areas of Spain. </li>
+                            <li> <strong> Wander through Seville </strong> - Seville is an amazing city with great churches, palaces, and historic sites. They also have good shopping here. I really like the Jewish Quarter here and the monument dedicated to the different regions of Spain. This is also a big student town. s</li>
+                        </ul>
+                    </article>
+                    <article class = "main">
+                        <h2> Spain Travel Costs </h2>
+                        <ul>
+                            <li> <strong> Accommodation </strong> - Accommodation in Spain is pretty cheap when compared to other Western European countries. Dorm beds in hostels typically begin around 15 EUR (17 USD) per night and go as high as 30 EUR (35 USD) in major cities like Barcelona or Madrid. Hostel private rooms start around 40 EUR (45 USD) per night for a double. Free WiFi is standard, and it’s not uncommon to find hostels with free breakfast, either. Budget hotels begin around 45 EUR (50 USD) for a twin/double and go up from there. Prices will be slightly lower outside of the major cities and tourist areas. </li>
+                            <li> <strong> Food </strong> - You can get cheap tapas and sandwiches meals for between 3-10 EUR (4-12 USD). If you want wine included, expect to spend about 10-15 EUR (11-17 USD) per meal. A good restaurant meal will set you back around 13 EUR. If you go out for paella, drinks, or appetizers, then you should plan to spend around 20 EUR (25 USD) for a meal. Spain has a lot of expensive restaurants, and meals there begin around 30 EUR (35 USD) with a drink. </li>
+                            <li> <strong> Activities </strong> - Museums and attractions in Spain cost between 2-14 EUR (3-15 USD). Diving on the islands will cost around 45 EUR (50 USD) per dive.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <%- include("../views/footer") %>
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>

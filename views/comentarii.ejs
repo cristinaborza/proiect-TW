@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog  </title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+        <script type = "text/javascript" src = "script.js"> </script>
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+            <div id = "continut"> 
+                <h1> Comentarii </h1>
+                <input type = "date" id = "commDate"> </input>
+                <button id="afisareComm" onclick="afiseazaComentariu()"> Afiseaza Comentariu </button>
+                <button id="sortare" onclick="sorteazaComentarii()"> Sorteaza comentarii </button>
+                <br>
+                <br>
+                <br>
+                <div id = "listaComentarii"> 
+                    <table id = "tabelComentarii">
+                        <tr>
+                            <th> Nume </th>
+                            <th> Prenume </th>
+                            <th> Data </th>
+                            <th> Comentariu </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <%- include("../views/footer") %>
+        </div>
+    </body>
+</html>

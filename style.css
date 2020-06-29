@@ -1,0 +1,603 @@
+* { 
+	margin: 0;
+	box-sizing:border-box;
+}
+
+html, body {  
+	background: #295A94 url(images/bg.gif) repeat-x;
+	color: whitesmoke; 
+	margin-bottom: 3em;
+}
+
+#header { 
+    height: 140px; 
+}
+
+#maincontainer { 
+	min-height: 100%; 
+    height: auto;  
+    width: 960px; 
+    margin: 0 auto -4em;
+}
+
+#question{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+#enunt_intrebare {
+	text-indent: 0px !important;
+	margin-top: 2em;
+}
+
+.myCheck {	
+	margin-left: 1em;
+}
+
+#navleft {
+	float: left;
+	width: 22%;
+}
+
+#navleft p {
+	font-family: Georgia,serif;
+	/*text-align: center;*/
+	text-indent: 0;
+}
+
+#userLogIn {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top:1em;
+	border-bottom: 3px solid #e8ccad;
+}
+
+
+#activitate {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top:1em;
+	border-bottom: 3px solid #e8ccad;
+}
+
+#activitate h1 {
+	font-size: 1.3em;
+	font-weight: normal;
+	color: #e8ccad;
+}
+
+#act {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top:0.7em;
+}
+
+#meniu {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-bottom: 3px solid #e8ccad;
+}
+
+#meniu h1 {
+	font-size: 1.3em;
+	font-weight: normal;
+	color: #e8ccad;
+}
+
+#meniu p{
+	margin-top:1em;
+	/*text-align: left;*/
+	/*font-size: 0.75em;*/
+}
+
+#p_citat {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 1em;
+}
+
+.p_meniu {
+	text-align: left;
+	font-size: 0.75em;
+}
+
+#continut {
+	float: right;
+	width: 72%;
+}
+
+#footer {
+	position: fixed;
+   	left: 0;
+  	bottom: 0;
+	width: 100%;
+	height: 2em;  
+	background-color: #E2E2E2;
+}
+
+#footer p {
+	color: #555;
+	text-align: center;
+	margin-top: 0.4em;
+}
+
+#meniu {
+	text-align: center;
+}
+
+#schimba {
+	width: 50%;
+	background-color: #DADADA;
+	color: black;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top:0.5em;
+}
+
+
+#reset {
+	display: none;
+	width: 50%;
+	background-color: #DADADA;
+	color: black;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#comm {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#logOutButton {
+	display: none;
+	width: 50%;
+	background-color: #DADADA;
+	color: black;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top:0.5em;
+}
+
+#logInButton {
+	width: 50%;
+	background-color: #DADADA;
+	color: black;
+	margin-top: 4%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top:0.5em;
+}
+
+input[type = text], [type = number], [type = password], [type = date], select {
+	width: 100%;
+	padding: 12px 20px;
+ 	margin: 1% 0;
+  	border: 1px solid #ccc;
+ 	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+#submit {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+#afisareComm {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#sortare {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#logOutUser {
+	width: 100%;
+	background-color: #DADADA;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+textarea {
+	width: 100%;
+	height: 15em;
+	margin: 8px 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.navbar {
+	overflow: hidden;
+    height:50px;
+    font: normal 16px/20px "trebuchet ms", verdana, arial, helvetica, sans-serif;
+    border-top:4px solid #943528;
+    margin-bottom: 35px;
+}
+		
+.navbar a {
+	float: left;
+	font-size: 16px;
+	font-weight: normal;
+	color: #555;
+	text-decoration: none;
+	text-align: center;
+	padding:0.7em 2.55em 0 2.55em;
+	letter-spacing: 1px; 
+	margin: 0;
+	text-transform: uppercase; 
+}
+
+											  
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+											  
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: #555;
+	padding:0.58em 2.55em 7px 2.55em;
+	background-color: inherit;
+	font-family: inherit;
+	letter-spacing: 1px; 
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+											  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 13em;
+	box-shadow: 0px 8px 16px 0px;
+	z-index: 1;
+}
+											  
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-transform: capitalize;
+	display: block;
+	text-align: left;
+}
+											  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+											  
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.video-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+	position:absolute;
+}
+
+#continut {
+	font-family: Georgia,serif;
+}
+#continut p {
+	margin-bottom: 1em;
+}
+
+#continut h1{	
+    color:#e8ccad;
+    font-variant: small-caps; 
+	font-weight: 100;
+	border-bottom:2px solid #e8ccad;	
+	text-align: center;
+	margin: 0 0 1em 0;
+}
+
+#continut h2{							   
+	font-family:Georgia,serif;
+	font-size: 1.5em; 
+	color:#e8ccad;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+#continut h3{		
+	margin-top: 1em;						   
+    font-family:Georgia,serif;
+	color:#e8ccad;
+	font-size: 18px;
+}
+
+#continut img {
+	text-align: center;
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+
+#continut li {
+	font-family:Georgia,serif;
+	color: whitesmoke;
+	font-size: 16px;
+	margin-bottom: 0.5em;
+}
+
+#continut a {
+	color: #CAB985;
+	font-family: Georgia,serif;
+	text-decoration: none;
+}
+
+#continut a:visited {
+	color: #CAB985;
+	font-family: Georgia,serif;
+	text-decoration: none;
+}
+
+#continut a:hover{
+	color: #CAB985;
+	font-weight: bold; 
+	text-decoration: none; 
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.flex-container p {
+	text-align: center;
+	text-indent: 0;
+}
+  
+.flex-item {
+	padding: 5px;
+	width: 300px;
+	margin-top: 10px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+  }
+
+.flex-text {
+	list-style-position: inside;
+	text-align: center;
+	margin-bottom: 0.5em;
+	font-size: 1em !important;
+}
+
+.main {
+	padding: 5px;
+	width: 450px;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 1.2em;
+    text-align: justify;
+}
+
+.home {
+	padding: 5px;
+	width: 450px;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 1.2em;
+    text-align: center;
+}
+
+.poze {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.poze_home {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 28em;
+}
+
+.harta {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+																				 
+p {
+	text-indent: 50px;
+}
+
+#header h1 { 
+    font-family: "trebuchet ms", verdana, arial, helvetica, sans-serif;
+	font-size: 1.9em; 
+	font-weight: normal; 
+	padding: 20px 0 7px 0; 
+	margin: 0; 
+	text-align: right; 	
+}
+
+#titluPagina {
+	color: #e8ccad;
+}
+
+div {
+    text-align: justify;
+} 
+
+#invalidEmail {
+	display: inline;
+	font-size: 12px;
+	color: red;
+}
+
+#invalidFname {
+	display: inline;
+	font-size: 12px;
+	color: red;
+}
+
+#invalidLname {
+	display: inline;
+	font-size: 12px;
+	color: red;
+}
+
+#invalidPhone {
+	display: inline;
+	font-size: 12px;
+	color: red;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0;
+  margin-top: -2em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  
+#listaComentarii table {
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+	color: black;
+}
+
+#listaComentarii th {
+	height: 3em;
+}
+
+#listaComentarii td {
+	height: 2em;
+}
+
+#listaComentarii tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+#listaComentarii tr:nth-child(odd) {
+	background-color: white;
+}

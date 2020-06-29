@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title> Travel blog </title>
+
+    <link rel = "stylesheet" href = "style.css"/>
+    <meta name = "viewpoint" content = "width = device-width">
+    <script type = "text/javascript" src = "../script.js"> </script>
+  </head>
+
+  <body>
+    <div id = "maincontainer">
+      <%- include("../views/header") %>
+      <%- include("../views/navbar") %>
+      <%- include("../views/navleft") %>
+
+      <div id = "continut">
+        <h1> Home </h1>
+        <h2> Latest blog posts </h2>
+        <ul class = "flex-container">
+          <li class="main">
+            <img src = "images/amsterdam_home.jpg" alt = "incognito" class = "poze_home">
+            <p> <a href = "/AmsterdamBlog"> 2 Days in Amsterdam Itinerary </a> </p>
+          </li>
+          <li class="main">
+            <img src = "images/israel_home.jpg" alt = "incognito" class = "poze_home">
+            <p> <a href = "/IsraelBlog"> The 11 best things to see and do in Israel </a> </p>
+          </li>
+        </ul>
+
+        <h2> Destinations </h2>
+        <ul class = "flex-container">
+          <li class="home">
+            <img src = "images/australia.jpg" alt = "Australia" class = "poze_home">
+            <p> <a href = "/australia"> Australia </a> </p>
+          </li>
+          <li class="home">
+            <img src = "images/canada.jpg" alt = "Canada" class = "poze_home">
+            <p> <a href = "/canada"> Canada </a> </p>
+          </li>
+          <li class="home">
+            <img src = "images/italy.jpg" alt = "Italy" class = "poze_home">
+            <p> <a href = "/italy"> Italy </a> </p>
+          </li>
+          <li class="home">
+            <img src = "images/japan.jpg" alt = "Japan" class = "poze_home">
+            <p> <a href = "/japan"> Japan </a> </p>
+          </li>
+          <li class="home">
+            <img src = "images/spain.jpg" alt = "Spain" class = "poze_home">
+            <p> <a href = "/spain"> Spain </a> </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <%- include("../views/footer") %>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog </title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+
+            <div id = "continut">
+                <h1> Canada travel guide </h1>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/canada1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/canada2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/canada3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+            
+                <p> Canada is a country filled with wonderfully friendly people, classy, diverse cities, and a diverse landscape that includes tundras, rainforest, deserts, and huge mountains. </p>
+                <p> From the icy tundra of the Yukon to rocky beaches of the east coast, the mountains of Calgary to the rainforests of Vancouver, Canada is a country that is often skipped over on many world trips. That’s such a shame. Canada is so big and makes for a wonderful road trip country! </p>
+                <p> You can spend a few months traveling around Canada from end to end. </p>
+
+                <div class = "flex-container">
+                    <article class = "main">
+                        <h2> Things to See and Do in Canada </h2>
+                        <ul>
+                        <li> <strong> Celebrate the Calgary Stampede </strong> During July, thousands of people descend to Calgary for this multi-day rodeo, drinking event, and carnival. It’s where everyone pretends to be a cowboy for a few days. It’s a lot of fun, and you’ll meet tons of people from around the world. Wear cowboy boots and a hat if you want to fit in! Save some money to sample the unique festival food, and line up for the popular tents well in advance. It’s one of Canada’s premier events. </li>
+                        <li> <strong> Hit the slopes </strong> The mountains in Canada offer great skiing and snowboarding during the winter. Banff is a popular mountain town known for its excellent trails. It’s quite busy during the winter months as locals and visitors alike hit the slopes. While Banff is just the most popular place to go but there are tons of other good skiing destinations in the country. Sunshine Village, Whistler Blackcomb, Lake Louise, Kicking Horse, and Mont Tremblant are just a few you should check out (they stretch from British Columbia to Quebec). </li>
+                        <li> <strong> Visit Vancouver Island </strong> Take a few days off from the city to explore this western island. Try the delicious seafood, go for a hike, spot some whales, shop, and lounge on the beach. This a place to just sit and relax. Since it is so close to Vancouver, it’s a popular getaway with the locals during the summer. Victoria is a quiet but gorgeous little city, and it’s actually the capital of British Columbia. From here you can also visit places like Tofino, where the bustling surf community has evolved into a fun hippie town. </li>
+                        <li> <strong> Hike the rainforest </strong> Hike the Pacific Rim National Park for a wonderful look at some temperate rain forests on Vancouver Island. It’s one of the most popular parks in Canada, home to Western Hemlock, Western Red Cedar, and Pacific Silver Fir (among others). The Long Beach area is one of the most accessible places for hiking, but the sand dunes behind Wickanninish Beach on the south Beach Trail are also worth the trek. </li>
+                        </ul>
+                    </article>
+                    <article class = "main">
+                        <h2> Canada Travel Costs </h2>
+                        <ul>
+                        <li> <strong> Accommodation </strong> - Rates can vary a lot depending on what city you’re staying in. On average, you’ll wind up paying about $30 CAD ($22 USD) for a dorm room at a hostel while you should expect to pay around $65 CAD ($48 USD) for a budget hotel room. Expect prices to rise drastically in larger cities (notably Vancouver, Toronto, and Ottawa). Airbnb is available across the country, rivaling budget hotels for price and convenience. Expect to pay an average of $30 CAD ($22 USD) per night for a shared room, while entire homes/apartments will cost you around $80 CAD ($60 USD). Just keep in mind many smaller towns won’t have many options, though they will usually have locally-owned hotels or motels that are generally quite cheap. </li>
+                        <li> <strong> Food </strong> - Food can be inexpensive as long as you stick to cooking for yourself or hit pubs. Conversely, a meal out at a restaurant will cost you around $20-35 CAD ($15-26 USD)! Cheap sandwich shops and fast food are your best bet and will be less than $13 CAD ($10 USD) per meal. If you are going to cook your own food, expect to pay between $50-75 CAD ($27-55 USD) per week.</li>
+                        <li> <strong> Activities </strong> - Canada has a lot of outdoor activities – kayaking and canoeing, hiking, skiing and snowboarding, white-water rafting are just some of the many options available. No matter what part of the country you are in, and no matter the season, there is always something to do. Costs range from $20 CAD ($15 USD) for simple trail access permits to over $100 CAD ($73 USD) depending what you are doing and if you need a guide. Museum and historic site entrance fees start around $15 CAD ($11 USD). </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <%- include("../views/footer") %>
+  
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>

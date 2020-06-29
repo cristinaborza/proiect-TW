@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel Blog  </title>
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+    </head>
+
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+
+            <div id = "continut">
+                <h1> Australia travel guide </h1>
+          
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/australia1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/australia2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/australia3.jpg" style="width:100%">
+                    </div>
+          
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+
+                <p> Australia is one of the most popular travel destinations in the world. It’s known as a major backpacking, camping, road trip, and diving destination, but no matter your travel style, there is something to draw you here. </p>
+                <p> Backpacking Australia is like the “must do” for backpackers around the world. I feel like every backpacker stops there. </p>
+                <p> The country is filled with incredible natural beauty from Uluru to the Outback, rainforests to pristine white sand beaches, and of course, the Great Barrier Reef. Sydney’s Harbor Bridge and Opera House are iconic man-made wonders, and Melbourne’s café culture will make you feel like you are in Europe.</p>
+                <p> It’s no wonder why so many people want to travel around Australia. </p>
+                <p> However, the country is large with not a lot of transportation options outside the costs and can also be very expensive. </p>
+                <p> Use my extensive Australia travel guide (based on years of visits) to help plan your next trip so you can see more, spend less, and have the best time ever! </p>
+
+                <div class = "flex-container">
+                    <article class = "main">
+                        <h2> Things to See and Do in Australia </h2>
+                        <ul>
+                            <li> <strong> Explore Fraser Island </strong> - The world’s largest sand island is a popular place to do some camping, swim, hike, and avoid dingoes. It’s also extremely popular with the locals because of its rustic beauty is easily accessible from the mainland. They camp a lot on the island. You can hire your own 4WD car or take an overnight tour through the island that’s famous for its fresh water lake (and dingoes). Sadly, you can’t go in the water nearby as it’s rough and full of sharks! </li>
+                            <li> <strong> Go to Cairns </strong> - Cairns is Australia’s gateway to northern Queensland. From here you can visit the Great Barrier Reef, the Daintree rainforest, the Atherton tablelands, Cape Tribulation, and much more. Cairns is a pretty typical tropical city, and life here focuses on taking the time to smell the roses. With so much to see, the city deserves a very long stay. Plan to visit for a week which will give you enough time to explore the area, plus spend some time lounging by the pool. This town may be small, but it will leave you wanting more. </li>
+                            <li> <strong> Hang out in Brisbane on the South Bank </strong> - Brisbane is a “business city”, so unlike Sydney or Melbourne, there isn’t a lot of “culture” here. South Bank has some nice restaurants, and there are some decent pubs, but overall, the city isn’t one of the most exciting places to visit in Australia. However, it’s worth a stop to hang out on South Bank (which I loved) and meet travelers heading north. </li>
+                            <li> <strong> Hike the Daintree </strong> - The world’s oldest rainforest (yes, older than the Amazon) offers hikes that range from easy to challenging, dense jungles, beautiful mountains, waterfalls, wildlife, and cliffs. Make sure you spend a few days hiking around and getting out of touristy Cairns. If you really want to get off the beaten path, head all the way up to Cape Tribulation, and enjoy some real peace and quiet (just watch out for jellyfish when you go swimming. There are few folks to help if something goes wrong). There a lot of tour companies in the area but I like Uncle Brian’s tours the best (though he goes more into Atherton Tablelands and not up super far north). </li>
+                            <li> <strong> Have a Sunday Session in Perth </strong> -Perth is Australia’s west coast capital and is often overlooked by most travelers. It’s expensive to get out there from the east coast so most travelers avoid it, but I love it! In fact, it’s probably my favorite city in all of Australia. Perth feels more like a large town than a city and is the best place to have a “Sunday Session” (an Aussie tradition of drinking on Sunday afternoons). From the beaches, food, and beer (be sure to take a day trip to Freemantle), Perth is just awesome. </li>
+                        </ul>
+                    </article>
+                    <article class = "main">
+                        <h2> Australia Travel Costs </h2>
+                        <ul>
+                            <li> <strong> Accommodation </strong> - Hostels start at 20 AUD/15 USD per night for a dorm room, though they get as high as 40 AUD/30 USD in the big coastal cities. Private rooms with a double bed and a shared bathroom in hostels range between 80-100 AUD/60-75 USD per night. For budget hotels, you are looking to spend at least around 75-95 AUD/55-70 USD for a double room, private bathroom, TV, and breakfast. Larger, chain hotels cost closer to 200 AUD/150 USD. Camping costs between 15-30 AUD/10-20 USD per night (cheaper if you bring your own tent, more expensive if you’re parking an RV). </li>
+                            <li> <strong> Food </strong> - Food isn’t cheap in Australia! Most decent restaurant entrees cost at least 20 AUD/15 USD. Originally, I thought I was doing something wrong spending so much, but as many of my Aussie friends told me, “we just get screwed here.” If you cook your meals, expect to pay 100 AUD/75 USD per week for groceries that will include pasta, vegetables, chicken, and other basic foodstuffs. Grab and go places cost around 8-10 AUD/6-7 USD for sandwiches. Fast food is around 15 AUD/10 USD for a meal (burger, fries, soda). The best value food are the Asian and Indian restaurants where you can get a really filling meal for under 10 AUD/7 USD. </li>
+                            <li> <strong> Activities </strong> - Multi-day activities and tours are expensive, generally costing 400-540 AUD/295-400 USD. Day trips will cost about 135-230 AUD/100-170 USD. For example, a one-day trip to the Great Barrier Reef can cost 230 AUD/170 USD while a two-night sailing trip around the Whitsunday Islands can cost upwards of 540 AUD/400 USD. A three-day trip to Uluru from Alice Springs is around 480 AUD/355 USD. Walking tours are around 50 AUD/35 USD and day trips to wine regions are between 150-200 AUD/110-150 USD. </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+            <%- include("../views/footer") %>
+            
+        </div>
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>

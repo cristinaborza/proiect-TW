@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> 
+    Travel blog 
+  </title>
+
+  <link rel = "stylesheet" href = "style.css"/>
+  <meta name = "viewpoint" content= "width = device-width">
+  <script type = "text/javascript" src = "script.js"> </script>
+</head>
+
+<body>
+  <div id = "maincontainer">
+    <%- include("../views/header") %>
+    <%- include("../views/navbar") %>
+    <%- include("../views/navleft") %>
+
+    <div id = "continut">
+      <h1> How to book the cheapest flight possible to anywhere</h1>
+
+      <img src="images/avion.jpg" alt = "avion" class = "poze">
+
+      <p> We've all experienced the tiresome, repeated searching when trying to book the cheapest possible flights to any given destination. With endless search engines and continually fluctuating prices, the approach to frugal flight booking is overwhelming. Here's some key tips that will save you time, frustration and most importantly money when booking your next flight.</p>
+    
+      <h2> Keep your searches top secret </h2>
+      <p> You're not crazy for thinking that a flight price has changed after searching it a few times in your web browser. Based on the cookies in your browser, flight prices do increase when a particular route is repeatedly searched, as the site wants to scare you into booking the flight quickly before prices get even higher. <strong>Always search for flights in incognito or private browsing mode to see the lowest prices. </strong> </p>
+      <p> Your cookies are reset each time you re-open an incognito window. So if you want to start with a clean slate for each flight search (so your previous searches aren't “remembered”, potentially inflating costs), close all your incognito windows, open a new one, and then perform your flight search.</p>
+      <img src = "images/incognito.jpg" alt = "incognito" class = "poze">
+
+      <h2> Use the best flight search engines </h2>
+      <p> All search engines have inflated flight costs as part of taking a cut from the airlines. Some search engines (e.g. Expedia) consistently inflate much higher than others (listed below). It pays to familiarise yourself with sites that offer the best prices. </p>
+      <h3> Use These to Book </h3>
+
+      <ul> 
+        <li> <a href = "https://www.skyscanner.ro/?AID=12285961&PID=7714740&SID=cheapflights&assoateid=AFF_TRA_00014_00002&utm_source=commission%20junction&utm_medium=affiliate&utm_campaign=gl-travel-4449676-7714740&utm_content=gl-travel-12285961&_tck=b%2Ffqwn9l6MTFqFPLF1%2F8ilVE0fESuLlDT8coKepLQog&previousCultureSource=GEO_LOCATION&redirectedFrom=www.skyscanner.com"> Skyscanner </a></li>
+        <li> <a href = "https://www.airfarewatchdog.com/?source=124274"> AirFare Watchdog </a> </li>
+        <li> <a href = "https://www.momondo.com/?wgu=8613_170111_15847133382846_8eb52b992d&wgexpiry=1592489338&utm_source=webgains&utm_medium=affiliate&utm_campaign=170111&utm_content=8613"> Momondo </a> </li>
+        <li> <a href = "https://www.kiwi.com/us/?utm_source=cj&affilid=cj_4449676&CJEVENT=5871bd386ab411ea80b201680a180512"> Kiwi.com </a> </li>
+        <li> <a href = "https://www.cheapoair.com/flights/affiliates/thrifty?FpAffiliate=CJ&CAID=38545&utm_source=AFN&utm_medium=CJ&utm_campaign=thrifty&FPSub=AID_12929321_PID_7714740_CJSID_"> Cheapoair </a> </li>
+      </ul>
+
+      <p> Finally, no single search engine is consistently perfect (though we typically find the cheapest price on Skyscanner or Momondo). As such, you may need to try a combination of search engines to ensure you're not missing any results. There doesn't seem to be one that gets the cheapest flight 100% of the time. </p>
+
+      <h2> Befriend budget airlines </h2>
+      <p> Budget airlines offer significantly cheaper tickets than their full-service counterparts. It should be obvious, but this comes with compromises such as less leg room and no “free” food/drink on-board (which by the way, is normally covered in your higher-priced ticket with full-service airlines). </p>
+      <p> But First… A NOTE ON BOOKING BUDGET AIRLINES. Always read the fine print and do the following: </p>
+
+      <ol>
+        <li> Check where the airport location is (some budget airlines fly to airports further out of  town). </li>
+        <li> Ensure you've booked & paid for your luggage allowance. Adhere to restrictions on weight, height, and # of bags allowed. Some airlines (e.g. Ryanair) will charge hefty fee if you're over. Remember, paying only for the exact luggage space/weight you need is how budget airlines keep their prices lower than traditional airlines! </li>
+        <li> Read the fine print. The best example is that Ryanair WILL CHARGE AN AIRPORT CHECK-IN Fee €/£55 if you do not check-in online in advance and print your boarding pass, or use their mobile boarding pass. A warning of this fee is clearly stated in all capital letters in the first sentence of your e-confirmation. In a nutshell, always read and follow instructions! </li>
+      </ol>
+
+      <p> Remember, if you want to book the cheapest flight possible (not service-of-the-year-award-winner), be adaptable, do your research, and know the budget airline's requirements & restrictions. </p>
+
+      <ul class="flex-container">
+        <li class="flex-item"> 
+          <p style = "font-size: 1.5em; color: #e8ccad;"> Canada </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://flyflair.com/"> Flair Airlines </a> </li>
+            <li class = "flex-text"> <a href = "https://wowair.com/"> WOW Air </a> </li>
+            <li class = "flex-text"> <a href = "https://www.spirit.com/"> Spirit Airlines </a> </li>
+            <li class = "flex-text"> <a href = "https://www.flyporter.com/en-ca/"> Porter </a> </li>
+            <li class = "flex-text"> <a href = "https://www.airtransat.com/en-CA/home?search=flight&flightType=RT&pax=1-0-0-0"> Air Transat </a> </li>
+          </ul>
+        </li>
+        <li class="flex-item">
+          <p style = "font-size: 1.5em;color: #e8ccad;"> United States </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://www.southwest.com/"> Southwest </a> </li>
+            <li class = "flex-text"> <a href = "https://www.allegiantair.com/"> Allegiant Air </a> </li>
+            <li class = "flex-text"> <a href = "https://www.flyfrontier.com/"> Frontier </a> </li>
+            <li class = "flex-text"> <a href = "https://www.suncountry.com/"> Sun Country Airlines </a> </li>
+          </ul>
+        </li>
+        <li class="flex-item">
+          <p style = "font-size: 1.5em; color: #e8ccad;"> Australia </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://www.jetstar.com/au/en/home"> Jetstar </a> </li>
+            <li class = "flex-text"> <a href = "https://tigerair.com.au/"> Tiger Air </a> </li>
+            <li class = "flex-text"> <a href = "http://www.flyscoot.com/index.php/en/"> Scoot </a> </li>
+          </ul>
+        </li>
+        <li class="flex-item">
+          <p style = "font-size: 1.5em; color: #e8ccad;"> New Zealand </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://www.jetstar.com/nz/en/home"> Jetstar </a> </li>
+            <li class = "flex-text"> <a href = "https://www.airnewzealand.com/"> Air New Zealand </a> </li>
+          </ul>
+        </li>
+        <li class="flex-item">
+          <p style = "font-size: 1.5em; color: #e8ccad;"> Asia </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://www.airasia.com/en/gb?gclid=CjwKCAjwvOHzBRBoEiwA48i6AgR3CskffQsJODmQG-XnYFXIuGyc-aiC9-ymH56Rhx_votMS0pUFuxoCDlcQAvD_BwE&gclsrc=aw.ds"> Air Asia </a> </li>
+            <li class = "flex-text"> <a href = "https://www.jejuair.net/"> Jeju Air </a> </li>
+            <li class = "flex-text"> <a href = "https://www.nokair.com/?utm_source=generic&utm_medium=Affiliate&utm_campaign=2018-AF-P6&utm_source=generic&utm_medium=Affiliate&utm_campaign=2018-AF-P6"> Nok Air </a> </li>
+            <li class = "flex-text"> <a href = "https://m.twayair.com/app/main"> T'Way Airlines </a> </li>
+            <li class = "flex-text"> <a href = "https://www.vanilla-air.com/"> Vanilla Air </a> </li>
+          </ul>
+        </li>
+        <li class="flex-item">
+          <p style = "font-size: 1.5em; color: #e8ccad;"> Europe </p> 
+          <ul>
+            <li class = "flex-text"> <a href = "https://www.easyjet.com/en"> Easyjet </a> </li>
+            <li class = "flex-text"> <a href = "https://www.ryanair.com/gb/en"> Ryanair </a> </li>
+            <li class = "flex-text"> <a href = "https://www.eurowings.com/en.html"> Eurowings </a> </li>
+            <li class = "flex-text"> <a href = "https://www.norwegian.com/us/"> Norwegian Air </a> </li>
+            <li class = "flex-text"> <a href = "https://wizzair.com/ro-ro"> Wizz Air </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <%- include("../views/footer") %>
+</body>
+</html>

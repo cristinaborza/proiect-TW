@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title> Travel blog </title>
+
+    <link rel = "stylesheet" href = "style.css"/>
+    <meta name = "viewpoint" content = "width = device-width">
+    <script type = "text/javascript" src = "../script.js"> </script>
+  </head>
+
+  <body>
+    <div id = "maincontainer">
+        <%- include("../views/header") %>
+        <%- include("../views/navbar") %>
+        <%- include("../views/navleft") %>
+
+        <div id = "continut">
+            <h1> Quiz </h1>
+            <ol id = "quiz"> 
+            </ol>
+            <button id = 'submit' onclick="showResults()"> Submit Quiz </button>
+            <div id="results"></div>
+        </div>
+    </div>
+    <%- include("../views/footer") %>
+</body>
+</html>

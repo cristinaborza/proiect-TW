@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Travel blog </title>
+
+        <link rel = "stylesheet" href = "style.css"/>
+        <meta name = "viewpoint" content = "width = device-width">
+    </head>
+    <body>
+        <div id = "maincontainer">
+            <%- include("../views/header") %>
+            <%- include("../views/navbar") %>
+            <%- include("../views/navleft") %>
+
+            <div id = "continut">
+                <h1> Backpacking Italy travel guide </h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/italy1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/italy2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/italy3.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+
+                <p> Italy’s great food, beautiful countryside, fabulous wine, and long history make it an excellent country to visit. </p>
+                <p> I fall in love with the country every time I backpack Italy.</p>
+                <p> The vineyards in Tuscany, the history of Florence, the ancient streets in Rome, the laid back nature of Southern Italy, the gorgeous Cinque Terre, and the romantic canals in Venice, all make the country irresistible. </p>
+                <p> Italy travel leaves no visitor underwhelmed and, with so much to do and see, it would take a lifetime to complete.</p>
+                <p> But that doesn’t mean you can’t see a lot in your time there, whether it’s a short two-week vacation or a longer backpacking trip. </p>
+                <p> Italy is best seen slowly so don’t rush it in one visit and try to do too much. </p>
+                <p> Relax, take in the scenery, and enjoy a latte. </p>
+                <p> This Italy travel guide combines years of experience to help you plan an even better trip to Italy! </p>
+
+                <div class = "flex-container">
+                    <article class = "main">
+                        <h2> Things to See and Do in Italy </h2>
+                        <ul>
+                            <li> <strong> See the Venice Carnival </strong> - Ten days and nights of masquerade madness in February before Lent is quite the party. This tradition goes back centuries and is one of the biggest parties and festivals in Italy. If you have the funds, you can even pay to attend a traditional masquerade ball. Make plans early, though – the entire city becomes packed and very expensive, so it will definitely change your Venice experience. </li>
+                            <li> <strong> Shop in Milan </strong> - Everyone knows the fashion capital of Italy. Take in the glamor of Milan, but the city itself doesn’t have many sights, so don’t spend more than a day or two here.</li>
+                            <li> <strong> Take a photo in Pisa </strong> - Everyone always says “I looooove Siena” and with good reason. It’s one of the best preserved medieval cities in Italy and has a labyrinth of lanes gathered around the arena of Piazza del Campo (where, during the summer, they have horses racing). </li>
+                            <li> <strong> Visit Siena </strong> - Everyone always says “I looooove Siena” and with good reason. It’s one of the best preserved medieval cities in Italy and has a labyrinth of lanes gathered around the arena of Piazza del Campo (where, during the summer, they have horses racing).</li>
+                            <li> <strong> Naples </strong> - Watch your pockets in Naples while you feast on their famous pizza! </li>
+                            <li> <strong> Relax on the lakes </strong> - The beautiful lakes up north, such as Lake Como, are the summer playground for Italians, the rich, and George Clooney. Come up here, play in the lakes, see beautiful villas, and hike in the countryside. </li>
+                            <li> <strong> Explore Florence </strong> - It’s Florence. There’s no real need to explain why to go here. Everything people say about it is true. Great food, amazing museums, ancient buildings, small streets, and awesome gelato. While here, make sure you take a few wine tours throughout the Tuscan region to get a feel for the countryside. </li>
+                        </ul>
+                    </article>
+                    <article class = "main">
+                        <h2> Italy Travel Costs </h2>
+                        <ul>
+                            <li> <strong> Accommodation </strong> - Hostel dorms average 18-30 EUR (20-35 USD) per night while private hostels rooms range between 50-100 EUR (55-115 USD) a night for rooms. Most hostels offer free linens and WiFi. You should expect to spend around 50 EUR (55 USD) per night for the most basic of rooms. For something a little nice and more spacious, look closer to 70 per night. A much better alternative to hotels is Airbnb, where a shared room in someone’s house typically costs around 20 EUR (23 USD) a night and an entire apartment start at about 40 EUR.</li>
+                            <li> <strong> Food </strong> - Italy is known for its cuisine – fresh pasta, bread, tomatoes, pizza, gelato, and wine. It’s easy to have a great (and expensive) meal anywhere in Italy, but it’s also easy to eat for less than 15 EUR (17 USD) a day if you make the effort. Most restaurant meals with wine will cost around 25 EUR (30 USD) per person. </li>
+                            <li> <strong> Activities </strong> - Most attractions and museums in Italy cost between 10-20 EUR (15-25 USD) to enter. Expect more if you’re hoping for a guide in places such as the Vatican or Colosseum. When booking guided tours, some companies will give discounts if you reserve multiple experiences with them. </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <%- include("../views/footer") %>
+  
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>
